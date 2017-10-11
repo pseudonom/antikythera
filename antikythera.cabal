@@ -1,0 +1,30 @@
+name:                antikythera
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/pseudonom/antikythera#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Eric Easley
+maintainer:          eric101111@gmail.com
+copyright:           2017 Eric Easley
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+library
+  exposed-modules:     Lib
+  hs-source-dirs:      src
+  default-extensions:  NoImplicitPrelude
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , hashable
+                     , unordered-containers
+                     , protolude
+
+executable antikythera
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
