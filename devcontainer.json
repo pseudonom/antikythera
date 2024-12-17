@@ -1,0 +1,9 @@
+{
+  "name": "Antikythera Dev Container",
+  "image": "haskell:8.10.7",
+  "settings": {},
+  "extensions": [
+    "haskell.haskell"
+  ],
+  "postCreateCommand": "stack setup && stack build"
+}
